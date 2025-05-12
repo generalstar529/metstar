@@ -1,0 +1,119 @@
+.leadership-hero {
+  height: 100vh;
+
+  &-title {
+      position: relative;
+      top: 75vh;
+      left: 50px;
+      word-wrap: break-word;
+      color: white;
+      letter-spacing: 3px;
+      font-weight: bold;
+
+      .title {
+          opacity: 0;
+          transition: transform 1s;
+          transform: translate(0, 100vh);
+      }
+
+      .visible-title1 {
+          opacity: 1;
+          transition: transform 1s;
+          transform: translate(0, 0);
+      }
+  }
+}
+
+.leadership-history {
+    position: relative;
+
+    background-color: $gray-color3;
+    & .title {
+        color: $warning-color;
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        height: 50%;
+        z-index: 0;
+        background: url('../images/topo-white.svg') no-repeat 50%;
+        background-size: cover;
+        opacity: .1;
+        top: 0;
+    }
+}
+
+.leadership-leader {
+    &-bar {
+        z-index: 20;
+        width: 3px;
+        height: 150px;
+        background-color: $danger-color;
+    }
+
+    &-bargroup {
+        &-first {
+            position: relative;
+            z-index: 20;
+            width: 3px;
+            height: 200px;
+            background-color: $danger-color;
+        }
+    
+        &-second {
+            position: relative;
+            z-index: 20;
+            top: 191px;
+            left: -5px;
+            width: 25px;
+            height: 3px;
+            background-color: $danger-color;
+            transform: rotate(-45deg);
+        }
+    
+        &-third {
+            position: relative;
+            z-index: 20;
+            top: 183px;
+            left: -10px;
+            width: 3px;
+            height: 40px;
+            background-color: $danger-color;
+        }
+    }
+
+    &-title {
+        z-index: 20;
+        color: $danger-color;
+        width: 50%;
+        transform: translateY(40px);
+    }
+
+    &-content {
+    }
+}
+
+.leadership-president {
+    background-color: white;
+
+    &-title {
+        color: $danger-color;
+    }
+}
+
+.leadership-director {
+    background-color: white;
+
+    &-title {
+        color: $danger-color;
+    }
+
+    &-content {
+        .learn-more {
+            width: 250px;
+        }
+    }
+}

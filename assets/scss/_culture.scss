@@ -1,0 +1,210 @@
+.culture-hero {
+  height: 100vh;
+
+  &-title {
+      position: relative;
+      top: 55vh;
+      left: 50px;
+      word-wrap: break-word;
+      color: white;
+      letter-spacing: 3px;
+      font-weight: bold;
+
+      .title {
+          opacity: 0;
+          transition: transform 1s;
+          transform: translate(0, 100vh);
+      }
+
+      .visible-title1 {
+          opacity: 1;
+          transition: transform 1s;
+          transform: translate(0, 0);
+      }
+  
+      .visible-title2 {
+          opacity: 1;
+          transition: transform 1.2s;
+          transform: translate(0, 0);
+      }
+  
+      .visible-title3 {
+          opacity: 1;
+          transition: transform 1.4s;
+          transform: translate(0, 0);
+      }
+  }
+}
+
+.culture-people {
+  height: 100vh;
+  width: 100%;
+  overflow-x: scroll;
+  background-color: $gray-color3;
+
+  & .title {
+    & .first {
+      -webkit-text-stroke: 2px $warning-color;
+    }
+  }
+
+  & .people1 {
+    width: 100%;
+    height: auto;
+  }
+
+  & .people2 {
+  }
+
+}
+
+.culture-cares {
+  background-color: white;
+
+  & .description {
+    opacity: 0;
+    transition: transform 2s;
+    transform: translate(-50%, 0);
+
+    & .title {
+      & .quanta {
+        color: $danger-color;
+      }
+      & .cares {
+        -webkit-text-stroke: 2px $danger-color;
+        color: transparent;
+      }
+    }
+  }
+
+  & .quanta-text-animation {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  & .quantacares {
+    opacity: 0;
+    transition: transform 2s;
+    transform: translate(0, 50vh);
+
+    position: relative;
+    width: 90%;
+  }
+
+  & .quanta-image-animation {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.culture-saftey {
+  background-color: $light-color;
+
+  & .section-saftey {
+    & .description {
+      opacity: 0;
+      transition: transform 2s;
+      transform: translate(10%, 0);
+
+      & .title {
+        & .saftey {
+          color: $danger-color;
+        }
+        & .always {
+          -webkit-text-stroke: 2px $danger-color;
+          color: transparent;
+        }
+      }
+  
+      @include screen-mobile-above {
+        .title {
+          transform: translateX(-40%);
+        }
+      }
+    }
+
+    & .safety-text-animation {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  
+    & .logo {
+      position: relative;
+      width: 90%;
+    }
+  }
+
+  & .section-plan {
+    & .description {
+      opacity: 0;
+      transition: transform 2s;
+      transform: translate(50%, 0);
+    }
+
+    & .plan-text-animation {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  & .section-capacity {
+    & .description {
+      opacity: 0;
+      transition: transform 2s;
+      transform: translate(-50%, 0);
+    }
+
+    & .capacity-text-animation {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.culture-empowering {
+  background-color: white;
+
+  & .description {
+    & .title {
+      & .solid {
+        color: $danger-color;
+      }
+      & .outline {
+        -webkit-text-stroke: 2px $danger-color;
+        color:  transparent;
+      }
+    }
+  }
+
+  & .imagecards {
+    & .imagecards-item {
+      height: 250px;
+    }
+  }
+}
+
+.culture-history {
+  background-color: white;
+
+  & .description {
+    opacity: 0;
+    transition: transform 2s;
+    transform: translate(-50%, 0);
+
+    & .title {
+      & .solid {
+        color: $danger-color;
+      }
+    }
+  }
+
+  & .history-text-animation {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  & .logo {
+    position: relative;
+    width: 90%;
+  }
+}

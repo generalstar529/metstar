@@ -1,0 +1,57 @@
+$red-300: #cd0a1b;
+$red-500: #bc2a27;
+$gold-300: #f0941d;
+$gold-500: #d87c0a;
+
+$warning-color: $gold-300;
+$danger-color: $red-300;
+
+$gray-color: rgb(47, 47, 47);
+$gray-color2: rgb(69, 69, 69);
+$gray-color3: rgb(26, 23, 23);
+
+$gray-100: #f4f4f4;
+$gray-200: #dedede;
+$gray-300: #eae4e4;
+$gray-500: #8d8d8d;
+$gray-600: #454545;
+$gray-700: grey;
+$gray-800: #1a1717;
+$gray-900: #2f2f2f;
+
+$light-color : rgb(244, 244, 244);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+$grid-gutter-width: $spacer;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1440px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl,
+  xxl: $screen-xxl,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1200px,
+);

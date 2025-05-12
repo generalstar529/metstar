@@ -1,0 +1,323 @@
+.home-hero {
+    height: 100vh;
+
+    &-title {
+        display: inline-flex;
+        position: relative;
+        top: 45vh;
+        word-wrap: break-word;
+        color: white;
+        letter-spacing: 3px;
+        font-weight: bold;
+
+        & .home-hero-power {
+            color: $warning-color;
+            background-image: url(../images/topo-white.svg);
+            background-color: $gold-500;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-position: left center;
+        }
+
+        .title {
+            opacity: 0;
+            transition: transform 1s;
+            transform: translate(0, 100vh);
+        }
+
+        .visible-title1 {
+            opacity: 1;
+            transition: transform 1s;
+            transform: translate(0, 0);
+        }
+    
+        .visible-title2 {
+            opacity: 1;
+            transition: transform 1.2s;
+            transform: translate(0, 0);
+        }
+    
+        .visible-title3 {
+            opacity: 1;
+            transition: transform 1.4s;
+            transform: translate(0, 0);
+        }
+    
+        .visible-title4 {
+            opacity: 1;
+            transition: transform 1.6s;
+            transform: translate(0, 0);
+        }
+    
+        .visible-title5 {
+            opacity: 1;
+            transition: transform 1.8s;
+            transform: translate(0, 0);
+        }
+    }
+}
+
+.home-feature {
+    background-color: $gray-color3;
+
+    &-bar {
+        z-index: 20;
+        width: 3px;
+        height: 50px;
+        background-color: $warning-color;
+    }
+
+    &-bargroup {
+        &-first {
+            position: relative;
+            width: 3px;
+            height: 220px;
+            background-color: $warning-color;
+        }
+
+        &-second {
+            position: relative;
+            top: 211px;
+            left: -5px;
+            width: 25px;
+            height: 3px;
+            background-color: $warning-color;
+            transform: rotate(-45deg);
+        }
+
+        &-third {
+            position: relative;
+            top: 203px;
+            left: -10px;
+            width: 3px;
+            height: 40px;
+            background-color: $warning-color;
+        }
+    }
+
+    &-imagecards {
+        &-item {
+            transition: height 0.5s;
+            height: 250px;
+        }
+
+        .zoom-up {
+            height: 500px;
+        }
+
+        .zoom-out {
+            height: 250px;
+        }
+    }
+
+    // &::before {
+    //     content: "";
+    //     background: url('../images/pattern-topo-tall-white.png');
+    //     opacity: .25;
+    //     background-size: contain;
+    //     background-repeat: repeat;
+    //     bottom: 0;
+    //     right: 0;
+    //     left: auto;
+    //     width: 30%;
+    //     height: 100%;
+    //     position: absolute;
+    // }
+    .bz-bdg {
+        width: 230px;
+        a {
+            display: block;
+            font-family: Helvetica, sans-serif;
+            font-size: 9px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 4px;
+            color: #747171;
+            line-height: 10px;
+        }
+        .small-label {
+            margin-top: -12px;
+            padding: 0 10px;
+        }
+    }
+}
+
+.home-career {
+    background-color: white;
+
+    &-bar {
+        z-index: 20;
+        width: 3px;
+        height: 150px;
+        background-color: $danger-color;
+    }
+
+    &-bargroup {
+        &-first {
+            position: relative;
+            z-index: 20;
+            width: 3px;
+            height: 150px;
+            background-color: $danger-color;
+        }
+    
+        &-second {
+            position: relative;
+            z-index: 20;
+            top: 141px;
+            left: -5px;
+            width: 25px;
+            height: 3px;
+            background-color: $danger-color;
+            transform: rotate(-45deg);
+        }
+    
+        &-third {
+            position: relative;
+            z-index: 20;
+            top: 133px;
+            left: -10px;
+            width: 3px;
+            height: 40px;
+            background-color: $danger-color;
+        }
+    }
+
+    &-title {
+        z-index: 20;
+        color: $danger-color;
+        width: 50%;
+    }
+
+    &-content {
+        position: relative;
+        top: -35px;
+    }
+}
+
+.home-news {
+    background-color: white;
+
+    &-bargroup {
+        &-first {
+            position: relative;
+            z-index: 20;
+            width: 3px;
+            height: 200px;
+            background-color: $danger-color;
+        }
+    
+        &-second {
+            position: relative;
+            z-index: 20;
+            top: 191px;
+            left: -5px;
+            width: 25px;
+            height: 3px;
+            background-color: $danger-color;
+            transform: rotate(-45deg);
+        }
+    
+        &-third {
+            position: relative;
+            z-index: 20;
+            top: 183px;
+            left: -10px;
+            width: 3px;
+            height: 40px;
+            background-color: $danger-color;
+        }
+    }
+
+    &-title {
+        z-index: 20;
+        color: $danger-color;
+    }
+
+    &-content {
+        position: relative;
+        top: 5px;
+        border-left: 3px solid $danger-color;
+    }
+
+    .news-container {
+        section {
+            height: 100%;
+        }
+
+        .tag {
+            opacity: 0;
+            transition: transform 1.5s;
+            transform: translate(0, 50vh);
+            border-left: 3px solid $danger-color;
+        }
+            
+        .visible-tag1 {
+            opacity: 1;
+            transition: transform 1.5s;
+            transform: translate(0, 0);
+        }
+
+        .visible-tag2 {
+            opacity: 1;
+            transition: transform 2s;
+            transform: translate(0, 0);
+        }
+
+        .visible-tag3 {
+            opacity: 1;
+            transition: transform 2.5s;
+            transform: translate(0, 0);
+        }
+    }
+}
+
+.home-footer {
+    background-color: black;
+
+    &-subbar1 {
+        position: relative;
+        z-index: 20;
+        width: 3px;
+        height: 150px;
+        background-color: $danger-color;
+    }
+
+    &-subbar2 {
+        position: relative;
+        z-index: 20;
+        top: 141px;
+        left: -5px;
+        width: 25px;
+        height: 3px;
+        background-color: $danger-color;
+        transform: rotate(-45deg);
+    }
+
+    &-subbar3 {
+        position: relative;
+        z-index: 20;
+        top: 133px;
+        left: -10px;
+        width: 3px;
+        height: 40px;
+        background-color: $danger-color;
+    }   
+
+    &-title {
+        z-index: 20;
+        color: $danger-color;
+        width: 350px;
+    }
+
+    &-content {
+        position: relative;
+        top: 5px;
+
+        &-bar {
+            width: 12px;
+            height: 100%;
+            background-color: $danger-color;
+        }
+    }
+}

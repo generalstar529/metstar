@@ -1,0 +1,332 @@
+.capabilities-hero {
+  height: 100vh;
+
+  &-title {
+      position: relative;
+      top: 75vh;
+      left: 50px;
+      word-wrap: break-word;
+      color: white;
+      letter-spacing: 3px;
+      font-weight: bold;
+
+      .title {
+          opacity: 0;
+          transition: transform 1s;
+          transform: translate(0, 100vh);
+      }
+
+      .visible-title1 {
+          opacity: 1;
+          transition: transform 1s;
+          transform: translate(0, 0);
+      }
+  }
+}
+
+.capabilities-list {
+    & .menu {
+        position: relative;
+        z-index: 20;
+
+        &:hover {
+            color: $warning-color;
+        }
+    }
+
+    & .directory {
+        background-color: white;
+        border-left: 3px solid $danger-color;
+    }
+
+    & .layout-image {
+        width: 90%;
+        transform: translateY(-30%);
+    }
+}
+
+.capabilities-service {
+    background-color: black;
+
+    & .title {
+        color: $warning-color;
+    }
+
+    & .description {
+        opacity: 0;
+        transition: transform 2s;
+        transform: translate(-50%, 0);
+    }
+
+    & .service-text-animation {
+        opacity: 1;
+        transform: translate(0, 0);
+    }    
+}
+
+.capabilities-explore {
+    background-color: $warning-color;
+}
+
+.capabilities-feature {
+    background-color: black;
+
+    &-bar {
+        z-index: 20;
+        width: 3px;
+        height: 50px;
+        background-color: $warning-color;
+    }
+
+    &-bargroup {
+        &-first {
+            position: relative;
+            width: 3px;
+            height: 220px;
+            background-color: $warning-color;
+        }
+
+        &-second {
+            position: relative;
+            top: 211px;
+            left: -5px;
+            width: 25px;
+            height: 3px;
+            background-color: $warning-color;
+            transform: rotate(-45deg);
+        }
+
+        &-third {
+            position: relative;
+            top: 203px;
+            left: -10px;
+            width: 3px;
+            height: 40px;
+            background-color: $warning-color;
+        }
+    }
+
+    & .txt-warning {
+        color: $warning-color;
+    }
+}
+
+.capabilities-item-hero {
+    height: 100vh;
+
+    & .tag {
+        position: relative;
+        top: 65vh;
+    }
+  
+    &-title {
+        position: relative;
+        top: 68vh;
+        word-wrap: break-word;
+        color: white;
+        letter-spacing: 3px;
+        font-weight: bold;
+  
+        .title {
+            opacity: 0;
+            transition: transform 1s;
+            transform: translate(0, 100vh);
+        }
+  
+        .visible-title1 {
+            opacity: 1;
+            transition: transform 1s;
+            transform: translate(0, 0);
+        }
+    }
+  }
+
+  .capabilities-item-introduction {
+    & .p-tabview-nav-content {
+        background-color: $danger-color;
+        color: white;
+        & .p-tabview-nav {
+    
+            & .p-tabview-nav-link {
+                padding: 40px 60px;
+    
+                &:hover {
+                    border-bottom: 3px solid white;
+                }
+            }
+
+            & .p-tabview-selected {
+                border-bottom: 3px solid white;
+            }
+        }
+    }
+
+    & .p-tabview-nav-btn {
+        color: white;
+    }
+    & .layout-image {
+        transform: scale(1.3);
+    }
+  }
+
+.capabilities-item-project {
+    background-color: white;
+      
+    &-title {
+        color: $danger-color;
+    }
+
+    &-bargroup {
+        &-first {
+            position: relative;
+            z-index: 20;
+            width: 3px;
+            height: 200px;
+            background-color: $danger-color;
+        }
+    
+        &-second {
+            position: relative;
+            z-index: 20;
+            top: 191px;
+            left: -5px;
+            width: 25px;
+            height: 3px;
+            background-color: $danger-color;
+            transform: rotate(-45deg);
+        }
+    
+        &-third {
+            position: relative;
+            z-index: 20;
+            top: 183px;
+            left: -10px;
+            width: 3px;
+            height: 40px;
+            background-color: $danger-color;
+        }
+    }
+
+    &-content {
+        opacity: 0;
+        transition: transform 2s;
+        transform: translate(0, 500px);
+    }
+
+    & .project-image-animation {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.capabilities-item-contactus {
+    background-color: black;
+
+    &-bar {
+        z-index: 20;
+        width: 3px;
+        height: 50px;
+        background-color: $warning-color;
+    }
+
+    &-bargroup {
+        &-first {
+            position: relative;
+            width: 3px;
+            height: 220px;
+            background-color: $warning-color;
+        }
+
+        &-second {
+            position: relative;
+            top: 211px;
+            left: -5px;
+            width: 25px;
+            height: 3px;
+            background-color: $warning-color;
+            transform: rotate(-45deg);
+        }
+
+        &-third {
+            position: relative;
+            top: 203px;
+            left: -10px;
+            width: 3px;
+            height: 40px;
+            background-color: $warning-color;
+        }
+    }
+
+    & .txt-warning {
+        color: $warning-color;
+    }
+}
+
+.capabilities-item-utility-history {
+    background-color: white;
+
+    & .txt-danger {
+        color: $danger-color;
+    }
+
+    & .txt-gray {
+        color: $gray-color2
+    }
+}
+  
+.capabilities-item-utility-explore {
+    background-color: $warning-color;
+    transform: translateY(-50%);
+}  
+
+.capabilities-item-utility-team {
+    background-color: $warning-color;
+
+    & .role {
+        display: "-ms-inline-grid";
+        height: 10px;
+    }
+}
+
+.capabilities-catalog {
+    background-color: $gray-200;
+
+    input {
+        padding: 10px;
+    }
+
+    svg {
+        width: 100px;
+        height: 46px;
+        padding: 0 20px 0 20px;
+    }
+
+    &::before {
+        content: '';
+        background: url('../images/topo-gray.svg') no-repeat 50%;
+        background-size: cover;
+
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        height: 25%;
+        z-index: 0;
+        opacity: .1;
+    }
+}
+
+.capabilities-offering {
+    & .offering-text {
+        color: $danger-color
+    }
+
+    & .offering-select {
+        width: 300px;
+    }
+
+    & .offering-title {
+        &:hover {
+            color: $warning-color;
+        }
+    }
+}

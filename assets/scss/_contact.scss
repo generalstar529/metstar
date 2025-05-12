@@ -1,0 +1,25 @@
+.contact-hero {
+  height: 100vh;
+
+  &-title {
+      position: relative;
+      top: 75vh;
+      left: 50px;
+      word-wrap: break-word;
+      color: white;
+      letter-spacing: 3px;
+      font-weight: bold;
+
+      .title {
+          opacity: 0;
+          transition: transform 1s;
+          transform: translate(0, 100vh);
+      }
+
+      .visible-title1 {
+          opacity: 1;
+          transition: transform 1s;
+          transform: translate(0, 0);
+      }
+  }
+}

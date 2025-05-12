@@ -1,0 +1,162 @@
+.sustainability-hero {
+  height: 100vh;
+
+  &-title {
+      position: relative;
+      top: 70vh;
+      left: 50px;
+      word-wrap: break-word;
+      color: white;
+      letter-spacing: 3px;
+      font-weight: bold;
+
+      .title {
+          opacity: 0;
+          transition: transform 1s;
+          transform: translate(0, 100vh);
+      }
+
+      .visible-title1 {
+          opacity: 1;
+          transition: transform 1s;
+          transform: translate(0, 0);
+      }
+  }
+}
+
+.sustainability-mission {
+  background-color: $gray-color3;
+
+  & .content {
+    color: $warning-color;
+  }
+  position: relative;
+    
+  &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100vw;
+      height: 50%;
+      z-index: 0;
+      background: url('../images/topo-white.svg') no-repeat 50%;
+      background-size: cover;
+      opacity: .1;
+      top: 0;
+  }
+}
+
+.sustainability-summary {
+  & .news-container {
+    .tag {
+        opacity: 0;
+        transition: transform 1.5s;
+        transform: translate(0, 50vh);
+        border-left: 3px solid $danger-color;
+    }
+        
+    .visible-tag1 {
+        opacity: 1;
+        transition: transform 1.5s;
+        transform: translate(0, 0);
+    }
+
+    .visible-tag2 {
+        opacity: 1;
+        transition: transform 2s;
+        transform: translate(0, 0);
+    }
+
+    .visible-tag3 {
+        opacity: 1;
+        transition: transform 2.5s;
+        transform: translate(0, 0);
+    }
+
+    .visible-tag4 {
+      opacity: 1;
+      transition: transform 3s;
+      transform: translate(0, 0);
+  }
+  }
+}
+
+.sustainability-report {
+  background-color: $warning-color;
+  transform: translateY(-50%);
+}
+
+.sustainability-environment {
+  background-color: $gray-color3;
+
+  &-title {
+      color: $warning-color;
+  }
+
+  &-content {
+    opacity: 0;
+    transition: transform 2s;
+    transform: translate(0, 300px);
+  }
+
+  & .environment-image-animation {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.sustainability-social {
+  background-color: white;
+
+  &-title {
+      color: $danger-color;
+  }
+
+  &-content {
+    opacity: 0;
+    transition: transform 2s;
+    transform: translate(0, 300px);
+  }
+
+  & .social-image-animation {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.sustainability-governance {
+  background-color: rgb(145, 145, 145);
+
+  &-title {
+      color: black;
+  }
+
+  &-content {
+    opacity: 0;
+    transition: transform 2s;
+    transform: translate(0, 300px);
+  }
+
+  & .governance-image-animation {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.sustainability-impact {
+  background-color: white;
+
+  &-title {
+    color: $danger-color;
+  }
+
+  & .impact-card {
+    & .title {
+      color: $danger-color;
+    }
+  }
+}
+
+.sustainability-connect-people {
+  background-color: black;
+}
