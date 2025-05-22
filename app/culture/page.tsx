@@ -1,14 +1,13 @@
-import Hero from '@/components/ui/culture/hero'
-import PeopleFirst from '@/components/ui/culture/people-first'
-import QuantaCares from '@/components/ui/culture/quanta-cares';
-import Saftey from '@/components/ui/culture/safety';
-import Empowering from '@/components/ui/culture/empowering';
-import History from '@/components/ui/culture/history';
-import BetterFeature from '@/components/ui/home/better-feature'
-import FindCareer from '@/components/ui/global/find-career';
+import Hero from "@/components/ui/culture/hero";
+import PeopleFirst from "@/components/ui/culture/people-first";
+import QuantaCares from "@/components/ui/culture/quanta-cares";
+import Saftey from "@/components/ui/culture/safety";
+import Empowering from "@/components/ui/culture/empowering";
+import BetterFeature from "@/components/ui/home/better-feature";
+import History from "@/components/ui/culture/history";
+import FindCareer from "@/components/ui/global/find-career";
 
-export default function CultureLayout() {  
-
+export default function CultureLayout() {
   return (
     <>
       <main className="grow">
@@ -16,11 +15,11 @@ export default function CultureLayout() {
         <PeopleFirst />
         <QuantaCares />
         <Saftey />
-        {/* <Empowering /> */}
+        <Empowering />
         <BetterFeature />
-        {/* <History /> */}
-        {/* <FindCareer /> */}
+        <History />
+        <FindCareer />
       </main>
     </>
-  )
+  );
 }
