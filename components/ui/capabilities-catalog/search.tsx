@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { Input , Select} from "@/components/utils"
+import { Input, Select } from "@/components/utils";
 
 const options = [
   "Select a Capability...",
@@ -12,14 +12,13 @@ const options = [
   "Exterior Remodeling",
   "Restoration",
   "Generators",
-  "Maintenance Subscriptions"
-]
+  "Maintenance Subscriptions",
+];
 
 export default function Search() {
-
   return (
     <section className="capabilities-catalog bg-zinc-100 text-center">
-      <div className='container mx-auto w-full md:w-7/12 pt-60 pb-10'>
+      <div className="container mx-auto w-full md:w-7/12 pt-60 pb-10">
         <div className="text-lg md:text-2xl lg:text-4xl text-black font-bold mb-10">
           SEE WHAT METSTAR PREMIER ERA INNOVATIONS CAN DO FOR YOU
         </div>
@@ -29,5 +28,5 @@ export default function Search() {
         </div> */}
       </div>
     </section>
-  )
+  );
 }

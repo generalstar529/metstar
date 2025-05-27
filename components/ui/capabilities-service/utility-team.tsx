@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 const professionals = [
   "CIVIL ENGINEERS",
@@ -35,27 +35,22 @@ const professionals = [
   "FIELD DATA COLLECTION TECHNICIANS",
   "PERMITING CONSULTANTS",
   "ENVIRONMENTAL COMPLIANCE CONSULTANTS",
-]
+];
 
 export default function Team() {
-
   return (
     <section className="capabilities-item-utility-team">
-      <div className='container mx-auto px-32 pt-10 pb-20'>
+      <div className="container mx-auto px-32 pt-10 pb-20">
         <div className="text-2xl md:text-3xl my-10">
           A TEAM OF OVER 3,000 PROFESSIONALS
         </div>
-        {
-          professionals.map((item, idx) => (
-            <span className="text-xl text-white mx-4 my-8 role">
-              {item}&nbsp;&nbsp;
-              {
-                idx === professionals.length - 1 ? <></> : "|"
-              }
-            </span>   
-          ))
-        }
+        {professionals.map((item, idx) => (
+          <span className="text-xl text-white mx-4 my-8 role">
+            {item}&nbsp;&nbsp;
+            {idx === professionals.length - 1 ? <></> : "|"}
+          </span>
+        ))}
       </div>
     </section>
-  )
-} 
+  );
+}

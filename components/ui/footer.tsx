@@ -66,12 +66,18 @@ export default function Footer() {
                   <Link href="/capabilities">Capabilities</Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/electric-power" className="txt-warning">
+                  <Link
+                    href="/capabilities/electric-power"
+                    className="txt-warning"
+                  >
                     Electric Power
                   </Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/energy-efficiency" className="txt-warning">
+                  <Link
+                    href="/capabilities/energy-efficiency"
+                    className="txt-warning"
+                  >
                     Energy Efficiency
                   </Link>
                 </li>
@@ -81,17 +87,26 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/interior-remodeling" className="txt-warning">
+                  <Link
+                    href="/capabilities/interior-remodeling"
+                    className="txt-warning"
+                  >
                     Interior Remodeling
                   </Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/exterior-remodeling" className="txt-warning">
+                  <Link
+                    href="/capabilities/exterior-remodeling"
+                    className="txt-warning"
+                  >
                     Exterior Remodeling
                   </Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/restoration" className="txt-warning">
+                  <Link
+                    href="/capabilities/restoration"
+                    className="txt-warning"
+                  >
                     Restoration
                   </Link>
                 </li>
@@ -101,7 +116,10 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/maintenance-subscriptions" className="txt-warning">
+                  <Link
+                    href="/capabilities/maintenance-subscriptions"
+                    className="txt-warning"
+                  >
                     Maintenance Subscriptions
                   </Link>
                 </li>
@@ -121,8 +139,11 @@ export default function Footer() {
           <div className="copyright-container">
             <div className="copyright-links">
               <div className="copyright-link flex">
-                <Link href="https://www.facebook.com/profile.php?id=61552768226665&mibextid=ZbWKwL" className="mr-5">
-                  <Icon icon="facebook"/>
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61552768226665&mibextid=ZbWKwL"
+                  className="mr-5"
+                >
+                  <Icon icon="facebook" />
                 </Link>
                 <Link href="https://www.instagram.com/metstar.premier.era.innovation/">
                   <Icon icon="instagram" />
